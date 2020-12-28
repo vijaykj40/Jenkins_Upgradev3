@@ -12,5 +12,12 @@ pipeline {
                 }
             }
         }
+    stage('Deploy in Staging Environment'){
+            steps{
+                build job: 'Deploy_war_to_container'
+
+            }
+            
+        }
     }
 }
