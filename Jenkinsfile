@@ -21,6 +21,7 @@ pipeline {
                   steps {
                         echo "Deploying in Production Area"
                   }
+            }
             stage('Deploy Production STAGING') {
                   steps {
                         echo "Deploying in POST STAGING Area"
